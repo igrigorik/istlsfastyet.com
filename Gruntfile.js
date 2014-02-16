@@ -48,13 +48,20 @@ module.exports = function(grunt) {
           livereload: true,
         }
       }
+    },
+
+    exec: {
+      copy: 'cp -r index.html robots.txt css images js release',
+      push: 'rsync -rtzh --progress --delete release/ --rsh="ssh -p22" istlsfastyet:public'
     }
   });
 
+  grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('build', ['sass']);
+  grunt.registerTask('deploy', ['build', 'exec:copy', 'exec:push'])
   grunt.registerTask('default', ['build','connect:server','watch']);
 }

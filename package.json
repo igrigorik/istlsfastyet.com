@@ -6,6 +6,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-sass": "~0.8.0",
-    "grunt-contrib-connect": "latest"
+    "grunt-contrib-connect": "latest",
+    "grunt-exec": "latest"
   }
 }
