@@ -1,163 +1,371 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Is TLS Fast Yet?</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
   </head>
   <body>
+  <header>
     <div class="row">
       <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+        <h2>TLS has exactly one performance problem: it is not used by enough sites on the web.</h2>
+        <h3>Everything else can be optimized.</h3>
       </div>
     </div>
+  </header>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>CPU &amp; Latency costs</h3>
     </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
-      </div>
+    <div class="small-12 medium-8 large-8 columns">
+      <p>The process of establishing and communication over an encrypted channel introduces additional computational costs. First, there is the assymetric (public key) encryption used during the TLS handshake. Then, once a shared secret is established, symmetric encryption takes over.</p>
     </div>
 
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <div class="small-12 medium-4 large-4 columns  panel">
+<pre><b># upgrade to latest</b>
+$> openssl version
+OpenSSL 1.0.1l 06 Jan 2014
+
+<b># run perf benchmarks</b>
+$> openssl sha speed
+$> openssl ecdh speed</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <p>Good news is, modern hardware has made great improvements to help minimize these costs, and what once may have required additional hardware can now be done efficiently by the CPU.</strong></p>
+    </div>
+  </div>
+
+  <div class="row panel callout">
+    <div class="small-12 medium-6 large-6 columns">
+      <p>
+      <q>On our production frontend machines, SSL/TLS accounts for less than 1% of the CPU load, less than 10 KB of memory per connection and less than 2% of network overhead. Many people believe that SSL/TLS takes a lot of CPU time and we hope the preceding numbers will help to dispel that.</q><br/>
+      <cite class="right"> - Adam Langley, Google</cite>
+    </p>
+    </div>
+
+    <div class="small-12 medium-6 large-6 columns">
+      <p>
+      <q>We have deployed TLS at a large scale using both hardware and software load balancers. We have found that modern software-based TLS implementations running on commodity CPUs are fast enough to handle heavy HTTPS traffic load without needing to resort to dedicated cryptographic hardware.</q><br/>
+      <cite class="right"> - Doug Beaver, Facebook</cite>
+    </p>
+    </div>
+
+    <div class="small-12 large-12 columns">
+      <p></p>
+      <p>
+      <q>Elliptic Curve Diffie-Hellman (ECDHE) is only a little more expensive than RSA for an equivalent security level… In practical deployment, we found that enabling and prioritizing ECDHE cipher suites actually caused negligible increase in CPU usage. HTTP keepalives and session resumption mean that most requests do not require a full handshake, so handshake operations do not dominate our CPU usage. We find 75% of Twitter’s client requests are sent over connections established using ECDHE. The remaining 25% consists mostly of older clients that don’t yet support the ECDHE cipher suites.</q><br/>
+      <cite class="right"> - Jacob Hoffman-Andrews, Twitter</cite>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 medium-8 large-8 columns">
+      <p>Before the client and the server can begin exchanging application data over TLS, the encrypted tunnel must be negotiated, which introduces additional roundtrips for each new connection. However, we don't have to incur the cost of a full handshake in every case: TLS resumption and TLS False Start decrease the cost to a single roundtrip for new and returning clients.</p>
+    </div>
+    <div class="small-12 medium-4 large-4 columns text-center">
+      <img src="images/rtts.png"/>
+    </div>
+
+    <div class="small-12 large-12 columns">
+      <p>Even better, combined with TCP Fast Open, the TCP+TLS handshake can be performed within a single roundtrip - i.e. same as regular HTTP session setup takes today. Finally, QUIC is also <a href="http://www.youtube.com/watch?v=hQZ-0mXFmk8">experimenting with zero-RTT setup</a> of the secure tunnel.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 medium-8 large-8 columns">
+      <hr />
+      <p>A well tuned TLS deployment can make an enormous positive difference in the user experience, as well as in your operational costs. Some of the most critical features and concepts:</p>
+
+      <ul>
+        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_HANDSHAKE">TLS Handshake</a></li>
+        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_RESUME">TLS Session Resumption</a></li>
+         <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_FALSE_START">TLS False Start</a></li>
+        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_RECORD_SIZE">TLS Record Size Optimization</a></li>
+        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_EARLY_TERMINATION">Early termination</a></li>
+        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#_ocsp_stapling">OCSP Stapling</a></li>
+        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#_http_strict_transport_security_hsts">HTTP Strict Transport Security (HSTS)</a></li>
+      </ul>
+
+      <p>To deliver the best performance, run down the <a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#_performance_checklist_2">TLS performance checklist</a> and use a tool like <a href="http://hpbn.co/qualys">Qualys SSL Server Test</a> to scan your servers for common configuration and security flaws.</p>
+    </div>
+
+    <div class="small-12 medium-4 large-4 columns panel">
+      <h5>High Performance Browser Networking</h5>
+      <img src="images/hpbn.png"/>
+      <p><i>What every developer should know about networking and web performance.</i></p>
+      <a href="http://chimera.labs.oreilly.com/books/1230000000545/" class=" success button expand">Read HPBN online</a>
+    </div>
+
+    <hr />
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Server performance</h3>
+      <p>TLS exposes many different knobs and new config flags on every server. Our goal here is not to provide an exhaustive list (consult server docs for that), but to highlight status of important performance-oriented features: resumption, stapling, false start (requires NPN and forward secrecy), and support for SPDY and HTTP/2 protocols.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th width="100">&nbsp;</th>
+            <th>Session identifiers</th>
+            <th>Session tickets</th>
+            <th>OCSP Stapling</th>
+            <th>Record size optimization</th>
+            <th>ALPN / NPN</th>
+            <th>Forward Secrecy</th>
+            <th>SPDY &amp; HTTP/2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="http://httpd.apache.org/docs/2.4/mod/mod_ssl.html">Apache</a></td>
+            <td class="ok"><a href="http://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslsessioncache">yes</a></td>
+            <td class="ok"><a href="http://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslsessionticketkeyfile">yes</a></td>
+            <td class="ok"><a href="http://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslusestapling">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert"><a href="https://issues.apache.org/bugzilla/show_bug.cgi?id=56028">no*</a></td>
+            <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Apache">yes</a></td>
+            <td class="warn"><a href="https://code.google.com/p/mod-spdy/">mod_spdy</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://trafficserver.readthedocs.org/en/latest/reference/configuration/">ATS</a></td>
+            <td class="ok"><a href="http://trafficserver.readthedocs.org/en/latest/reference/configuration/records.config.en.html#proxy-config-ssl-session-cache-timeout">yes</a></td>
+            <td class="ok"><a href="https://cwiki.apache.org/confluence/display/TS/What's+new+in+v4.2.x#What'snewinv4.2.x-RFC5077TLSSessiontickets">yes</a></td>
+            <td class="alert">no</td>
+            <td class="warn"><a href="https://cwiki.apache.org/confluence/display/TS/What's+new+in+v4.2.x#What'snewinv4.2.x-ConfiguremaxTLSrecordsize">static</a></td>
+            <td class="warn"><a href="http://mail-archives.us.apache.org/mod_mbox/www-announce/201206.mbox/%3C4FE245C6.6060900@apache.org%3E">yes*</a></td>
+            <td class="ok"><a href="https://issues.apache.org/jira/browse/TS-2372">yes</a></td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td><a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html">HAProxy</a></td>
+            <td class="alert"><a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-no-tls-tickets">no?</a></td>
+            <td class="ok"><a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-no-tls-tickets">yes</a></td>
+            <td class="alert">no</td>
+            <td class="ok"><a href="https://gist.github.com/igrigorik/8960971">dynamic</a></td>
+            <td class="ok"><a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-alpn">yes</a></td>
+            <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Haproxy">yes</a></td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.iis.net/configreference">IIS</a></td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
+            <td class="ok"><a href="http://unmitigatedrisk.com/?p=368">yes</a></td>
+            <td class="alert">no</td>
+            <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
+            <td class="ok"><a href="http://blogs.technet.com/b/erezs_iis_blog/archive/2013/08/22/perfect-secrecy-in-an-imperfect-world.aspx">yes</a></td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html">NGINX</a></td>
+            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_tickets">yes</a></td>
+            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache">yes</a></td>
+            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling">yes</a></td>
+            <td class="warn"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_buffer_size">static</a></td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Nginx">yes</a></td>
+            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_spdy_module.html">spdy/3.1</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Your favorite server missing, or found an error? Open a <a href="https://github.com/igrigorik/istlsfastyet">pull request!</a></p>
+
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>CDN &amp; PaaS performance</h3>
+      <p></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th width="100">&nbsp;</th>
+            <th>Session identifiers</th>
+            <th>Session tickets</th>
+            <th>OCSP Stapling</th>
+            <th>Record size optimization</th>
+            <th>ALPN / NPN</th>
+            <th>Forward Secrecy</th>
+            <th>SPDY &amp; HTTP/2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Akamai</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>CloudFlare</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="warn">4K</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok">spdy/3.1</td>
+          </tr>
+          <tr>
+            <td>AWS ELB &amp; CloudFront</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>Edgecast</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>Fastly</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>Google App Engine</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok">dynamic</td>
+            <td class="ok">yes</a></td>
+            <td class="ok">yes</td>
+            <td class="ok">spdy/3.1</td>
+          </tr>
+          <tr>
+            <td>Heroku</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>Limelight</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>MaxCDN</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="ok">spdy/3.1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Your favorite CDN or PaaS provider missing, or found an error? Open a <a href="https://github.com/igrigorik/istlsfastyet">pull request!</a></p>
+
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>FAQ <span class="small">#</span></h3>
+
+      <h4>How does this site measure up?</h4>
+      <p>It's running on latest build of nginx (1.5.10) with resumption, OCSP stapling, 1.4K TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it should be about as good as it gets - see config.</p>
+
+      <h4>If TLS False Start is enabled, do I need resumption?</h4>
+      <p>Both resumption and TLS False Start eliminate an extra roundtrip from the TLS handshake. However, resumption also allows you to skip the assymetric handshake crypto by reusing parameters from a previous session - this saves CPU cycles. In other words, they're complementary.</p>
+
+      <h4>Which ciphersuite should I be using?</h4>
+      <p>Mozilla maintains a great wiki page <a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Recommended_Ciphersuite">with recommended ciphersuite list</a> and server configuration tips.</p>
+
+      <h4>I run a multi-server deployment, any tips?</h4>
+      <p>Ensure you have a shared session cache to get good cache hit rate on resumed sessions across different servers. Also, ensure you expire and rotate your sessions and session ticket keys in a secure manner - especially when forward secrecy is enabled.</p>
+
+      <h4>You didn't mention SNI?</h4>
+      <p>Older clients (read, those on Android 2.2, and most IE versions running on Windows XP) do not support SNI. If you need to provide TLS to these older clients, then you may need a dedicated IP address for each host - talk to your hosting provider / CDN.</p>
+
+      <h4>What's the status of TCP Fast Open + TLS?</h4>
+      <p>...</p>
+
+      <h4>How does the QUIC "zero-RTT" handshake work?</h4>
+      <p>Check out <a href="https://docs.google.com/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit">QUIC Crypto doc</a> for the gritty details. For a general introduction, check out <a href="www.youtube.com/watch?v=hQZ-0mXFmk8">this video</a>.</p>
+
+      <h4>Where can I learn more about TLS performance?</h4>
+      <p>High Performance Browser Networking contains a <a href="http://hpbn.co/tls">full chapter on TLS performance</a>.</p>
+    </div>
+    <hr />
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns text-center">
+      <ul class="button-group right">
+        <li><a href="https://plus.google.com/+IlyaGrigorik" class="tiny button">+Ilya Grigorik</a></li>
+        <li><a href="https://twitter.com/igrigorik" class="tiny button">@igrigorik</a></li>
+        <li><a href="https://github.com/igrigorik/istlsfastyet" class="tiny button success">View on GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <p></p>
+    <br />
+    <br />
+  </div>
+
+
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=igrigorik"></script>
+  <script type="text/javascript">
+    addthis.layers({
+      'theme' : 'transparent',
+      'share' : {
+        'position' : 'left',
+        'numPreferredServices' : 5
+      }
+    });
+  </script>
+
   </body>
 </html>
