@@ -345,7 +345,7 @@ $> openssl ecdh speed</pre>
       <p>High Performance Browser Networking contains a <a href="http://hpbn.co/tls">full chapter on TLS performance</a>.</p>
 
       <h4>How does this site measure up?</h4>
-      <p>It's running on latest build of nginx (1.5.10) with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it's nearly as good as it gets - see config.</p>
+      <p>It's running on latest build of nginx (1.5.10) with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it's nearly as good as it gets - <a href="https://github.com/igrigorik/istlsfastyet.com/blob/master/nginx.conf">see config</a>.</p>
 
       <h4>How does the QUIC "zero-RTT" handshake work?</h4>
       <p>Check out <a href="https://docs.google.com/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit">QUIC Crypto doc</a> for the gritty details. For a general introduction, check out <a href="www.youtube.com/watch?v=hQZ-0mXFmk8">this video</a>.</p>
