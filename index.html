@@ -131,7 +131,7 @@ $> openssl ecdh speed</pre>
       <h3 id="server-performance"><a href="#server-performance">Server performance</a></h3>
       <p>TLS exposes many different knobs and new config flags on every server. Our goal here is not to provide an exhaustive list (consult server docs for that), but to highlight status of important performance-oriented features: resumption, stapling, false start (requires NPN and forward secrecy), and support for SPDY and HTTP/2 protocols.</p>
 
-      <table>
+      <table class="cf">
         <thead>
           <tr>
             <th width="100">&nbsp;</th>
@@ -209,7 +209,7 @@ $> openssl ecdh speed</pre>
       <h3 id="cdn-paas"><a href="#cdn-paas">CDN &amp; PaaS performance</a></h3>
       <p>Using a CDN allows us to terminate the connection close to the user, which can significantly reduce the cost of TCP and TLS handshake - see <a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_EARLY_TERMINATION">early termination</a>. For best results you should be using a CDN to serve both static and dynamic content.</p>
 
-      <table>
+      <table class="cf">
         <thead>
           <tr>
             <th width="100">&nbsp;</th>
@@ -363,32 +363,6 @@ $> openssl ecdh speed</pre>
     </div>
   </div>
 
-  <div class="row">
-    <p></p>
-    <br />
-    <br />
-  </div>
-
-
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=igrigorik"></script>
-  <script type="text/javascript">
-    var addthis_share = addthis_share || {}
-    addthis_share = {
-      'passthrough': {
-        'twitter': {
-          text: "TLS has exactly one performance problem: it is not used by enough sites on the web. Everything else can be optimized! istlsfastyet.com"
-        }
-      }
-    }
-
-    addthis.layers({
-      'theme' : 'transparent',
-      'share' : {
-        'position' : 'left',
-        'numPreferredServices' : 5
-      }
-    });
-  </script>
 
   </body>
 </html>

@@ -1,5 +1,5 @@
 *.DS_Store
-/css/*
+/css/app.css
 /bower_components/*
 /node_modules/*
 /release/*
