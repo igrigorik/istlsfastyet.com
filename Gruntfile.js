@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     },
 
     exec: {
-      copy: 'cp -r index.html robots.txt css images js release',
+      copy: 'cp -r *.{html,txt,ico} css images js release',
       push: 'rsync -rtzh --progress --delete release/ --rsh="ssh -p22" istlsfastyet:public'
     }
   });
