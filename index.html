@@ -23,7 +23,7 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h3>CPU &amp; Latency costs</h3>
+      <h3 id="cpu-latency"><a href="#cpu-latency">CPU &amp; latency costs</a></h3>
     </div>
 
     <div class="small-12 medium-8 large-8 columns">
@@ -114,7 +114,7 @@ $> openssl ecdh speed</pre>
 
   <div class="row">
     <div class="large-12 columns">
-      <h3>Server performance</h3>
+      <h3 id="server-performance"><a href="#server-performance">Server performance</a></h3>
       <p>TLS exposes many different knobs and new config flags on every server. Our goal here is not to provide an exhaustive list (consult server docs for that), but to highlight status of important performance-oriented features: resumption, stapling, false start (requires NPN and forward secrecy), and support for SPDY and HTTP/2 protocols.</p>
 
       <table>
@@ -192,7 +192,7 @@ $> openssl ecdh speed</pre>
 
   <div class="row">
     <div class="large-12 columns">
-      <h3>CDN &amp; PaaS performance</h3>
+      <h3 id="cdn-paas"><a href="#cdn-paas">CDN &amp; PaaS performance</a></h3>
       <p></p>
 
       <table>
@@ -310,7 +310,7 @@ $> openssl ecdh speed</pre>
 
   <div class="row">
     <div class="large-12 columns">
-      <h3>FAQ <span class="small">#</span></h3>
+      <h3 id="faq"><a href="#faq">FAQ</a></h3>
 
       <h4>How does this site measure up?</h4>
       <p>It's running on latest build of nginx (1.5.10) with resumption, OCSP stapling, 1.4K TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it should be about as good as it gets - see config.</p>
