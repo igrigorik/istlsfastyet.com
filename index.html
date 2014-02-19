@@ -20,7 +20,7 @@
     <meta name="twitter:image:src" content="/images/preview.png">
 
     <meta name="twitter:creator" content="@igrigorik">
-    <meta name="twitter:url" content="https://www.istlsfastyet.com/">
+    <meta name="twitter:url" content="https://istlsfastyet.com/">
     <meta name="twitter:title" content="Is TLS Fast Yet?">
 
   </head>
@@ -339,7 +339,7 @@ $> openssl speed ecdh</pre>
       <p>You can <a href="https://github.com/ioerror/duraconf/blob/master/startssl/README.markdown">get a free  certificate from StartSSL</a>. If you need wildcard support, or EV verification, then you will have to pay a bit extra - the security and integrity of your visitors data is well worth it.</p>
 
       <h4>TLS still adds an extra RTT, can we fix that?</h4>
-      <p>One possible route is to leverage TCP Fast Open, which would allow us to send the ClientHello within the TCP SYN packet - that would cut another RTT. In the meantime, QUIC is experimenting with "zero-RTT" secure handshake - see <a href="https://docs.google.com/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit">crypto doc</a> and this <a href="www.youtube.com/watch?v=hQZ-0mXFmk8">GDL episode</a> for a general introduction.
+      <p>One possible route is to leverage TCP Fast Open, which would allow us to send the ClientHello within the TCP SYN packet - that would cut another RTT. In the meantime, QUIC is experimenting with "zero-RTT" secure handshake - see <a href="https://docs.google.com/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit">crypto doc</a> and this <a href="http://www.youtube.com/watch?v=hQZ-0mXFmk8">GDL episode</a> for a general introduction.
 
       <h4>How does this site measure up?</h4>
       <p>It's running on latest build of nginx (1.5.10) with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it's nearly as good as it gets - <a href="https://github.com/igrigorik/istlsfastyet.com/blob/master/nginx.conf">see config</a>.</p>
