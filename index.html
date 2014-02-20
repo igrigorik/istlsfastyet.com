@@ -64,14 +64,14 @@ $> openssl speed ecdh</pre>
     <div class="small-12 medium-6 large-6 columns">
       <p>
       <q>On our production frontend machines, SSL/TLS accounts for less than 1% of the CPU load, less than 10 KB of memory per connection and less than 2% of network overhead. Many people believe that SSL/TLS takes a lot of CPU time and we hope the preceding numbers will help to dispel that.</q><br/>
-      <cite class="right"> - Adam Langley, Google</cite>
+      <cite class="right"> - Adam Langley, Google <a href="https://www.imperialviolet.org/2010/06/25/overclocking-ssl.html">"Overclocking SSL"</a></cite>
     </p>
     </div>
 
     <div class="small-12 medium-6 large-6 columns">
       <p>
       <q>We have deployed TLS at a large scale using both hardware and software load balancers. We have found that modern software-based TLS implementations running on commodity CPUs are fast enough to handle heavy HTTPS traffic load without needing to resort to dedicated cryptographic hardware.</q><br/>
-      <cite class="right"> - Doug Beaver, Facebook</cite>
+      <cite class="right"> - Doug Beaver, Facebook <a href="http://lists.w3.org/Archives/Public/ietf-http-wg/2012JulSep/0251.html">"HTTP2 Expression of Interest"</a></cite>
     </p>
     </div>
 
@@ -79,7 +79,7 @@ $> openssl speed ecdh</pre>
       <p></p>
       <p>
       <q>Elliptic Curve Diffie-Hellman (ECDHE) is only a little more expensive than RSA for an equivalent security level… In practical deployment, we found that enabling and prioritizing ECDHE cipher suites actually caused negligible increase in CPU usage. HTTP keepalives and session resumption mean that most requests do not require a full handshake, so handshake operations do not dominate our CPU usage. We find 75% of Twitter’s client requests are sent over connections established using ECDHE. The remaining 25% consists mostly of older clients that don’t yet support the ECDHE cipher suites.</q><br/>
-      <cite class="right"> - Jacob Hoffman-Andrews, Twitter</cite>
+      <cite class="right"> - Jacob Hoffman-Andrews, Twitter <a href="https://blog.twitter.com/2013/forward-secrecy-at-twitter-0">"Forward Secrecy at Twitter"</a></cite>
       </p>
     </div>
   </div>

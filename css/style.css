@@ -17,7 +17,11 @@ header h3 {
 }
 
 q { font-style: italic; }
-cite {font-weight:bold;}
+cite {
+  font-weight: bold;
+  text-align: right;
+}
+cite a { display: block; }
 
 
 table {
