@@ -355,7 +355,7 @@ $> openssl speed ecdh</pre>
       <p>Both resumption and TLS False Start eliminate an extra roundtrip from the TLS handshake. However, resumption also allows you to skip the assymetric handshake crypto by reusing parameters from a previous session &mdash; this saves CPU cycles. In other words, yes you need both.</p>
 
       <h4>I run a multi-server deployment. Any tips?</h4>
-      <p>Ensure you have a shared session cache to get good cache hit rate on resumed sessions across different servers. Also, ensure you expire and rotate your sessions and session ticket keys in a secure manner - <a href="https://www.imperialviolet.org/2013/06/27/botchingpfs.html">especially when forward secrecy is enabled</a>.</p>
+      <p>Ensure you have a shared session cache to get a good cache hit rate on resumed sessions across different servers. Also, ensure you expire and rotate your sessions and session ticket keys in a secure manner - <a href="https://www.imperialviolet.org/2013/06/27/botchingpfs.html">especially when forward secrecy is enabled</a>.</p>
 
       <h4>What about certificate costs?</h4>
       <p>You can <a href="https://konklone.com/post/switch-to-https-now-for-free">get a free  certificate from StartSSL</a>. If you need wildcard support, or EV verification, then you will have to pay a bit extra &mdash; the security and integrity of your visitors data is well worth it.</p>
