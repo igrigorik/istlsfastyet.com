@@ -46,7 +46,7 @@
     </div>
 
     <div class="small-12 medium-8 large-8 columns">
-      <p>The process of establishing and communicating over an encrypted channel introduces additional computational costs. First, there is the assymetric (public key) encryption used during the TLS handshake. Then, once a shared secret is established, symmetric encryption takes over.</p>
+      <p>The process of establishing and communicating over an encrypted channel introduces additional computational costs. First, there is the asymmetric (public key) encryption used during the TLS handshake. Then, once a shared secret is established, symmetric encryption takes over.</p>
     </div>
 
     <div class="small-12 medium-4 large-4 columns  panel">
@@ -362,7 +362,7 @@ $> openssl speed ecdh</pre>
       <p>Mozilla maintains a great wiki page <a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Recommended_Ciphersuite">with a recommended ciphersuite list</a> and server configuration tips.</p>
 
       <h4>If TLS False Start is enabled, do I need resumption?</h4>
-      <p>Both resumption and TLS False Start eliminate an extra roundtrip from the TLS handshake. However, resumption also allows you to skip the assymetric handshake crypto by reusing parameters from a previous session &mdash; this saves CPU cycles. In other words, yes you need both.</p>
+      <p>Both resumption and TLS False Start eliminate an extra roundtrip from the TLS handshake. However, resumption also allows you to skip the asymmetric handshake crypto by reusing parameters from a previous session &mdash; this saves CPU cycles. In other words, yes you need both.</p>
 
       <h4>I run a multi-server deployment. Any tips?</h4>
       <p>Ensure you have a shared session cache to get a good cache hit rate on resumed sessions across different servers. Also, ensure you expire and rotate your sessions and session ticket keys in a secure manner, <a href="https://www.imperialviolet.org/2013/06/27/botchingpfs.html">especially when forward secrecy is enabled</a>.</p>
