@@ -368,7 +368,7 @@ $> openssl speed ecdh</pre>
       <p>Ensure you have a shared session cache to get a good cache hit rate on resumed sessions across different servers. Also, ensure you expire and rotate your sessions and session ticket keys in a secure manner, <a href="https://www.imperialviolet.org/2013/06/27/botchingpfs.html">especially when forward secrecy is enabled</a>.</p>
 
       <h4>What about certificate costs?</h4>
-      <p>You can <a href="https://konklone.com/post/switch-to-https-now-for-free">get a free  certificate from StartSSL</a>. If you need wildcard support or EV verification, then you will have to pay a bit extra &mdash; the security and integrity of your visitors data is well worth it.</p>
+      <p>You can <a href="https://konklone.com/post/switch-to-https-now-for-free">get a free  certificate from StartSSL</a>. If you need wildcard support or EV verification, then you will have to pay a bit extra &mdash; the security and integrity of your visitors' data is well worth it.</p>
 
       <h4>How does this site measure up?</h4>
       <p>It's running on the latest build of nginx (1.5.10) with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it's nearly as good as it gets. <a href="https://github.com/igrigorik/istlsfastyet.com/blob/master/nginx/nginx.conf">See the config file</a>.</p>
