@@ -359,7 +359,7 @@ $> openssl speed ecdh</pre>
       <p>One possible route is to leverage TCP Fast Open, which would allow us to send the ClientHello within the TCP SYN packet &mdash; that would cut another RTT. In the meantime, both <a href="https://www.ietf.org/proceedings/88/slides/slides-88-tls-4.pdf">TLS 1.3</a> and QUIC are experimenting with "zero-RTT" handshake mechanisms. See <a href="https://docs.google.com/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit">QUIC crypto doc</a> and <a href="https://www.youtube.com/watch?v=hQZ-0mXFmk8">this GDL episode</a> for a general introduction to QUIC.</p>
 
       <h4>Which ciphersuite should I be using?</h4>
-      <p>Mozilla maintains a great wiki page <a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Recommended_Ciphersuite">with a recommended ciphersuite list</a> and server configuration tips.</p>
+      <p>Mozilla maintains a wiki page <a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Recommended_Ciphersuite">with a recommended ciphersuite list</a> and server configuration tips.</p>
 
       <h4>If TLS False Start is enabled, do I need resumption?</h4>
       <p>Both resumption and TLS False Start eliminate an extra roundtrip from the TLS handshake. However, resumption also allows you to skip the asymmetric handshake crypto by reusing parameters from a previous session &mdash; this saves CPU cycles. In other words, yes you need both.</p>
@@ -371,7 +371,7 @@ $> openssl speed ecdh</pre>
       <p>You can <a href="https://konklone.com/post/switch-to-https-now-for-free">get a free  certificate from StartSSL</a>. If you need wildcard support or EV verification, then you will have to pay a bit extra &mdash; the security and integrity of your visitors' data is well worth it.</p>
 
       <h4>How does this site measure up?</h4>
-      <p>It's running on the latest build of nginx (1.7.2) with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN + SPDY/3.1. In other words, it's nearly as good as it gets. <a href="https://github.com/igrigorik/istlsfastyet.com/blob/master/nginx/nginx.conf">See the config file</a>.</p>
+      <p>It's running on nginx with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN, and SPDY/3.1. <a href="https://github.com/igrigorik/istlsfastyet.com/blob/master/nginx/">See config files</a>.</p>
 
       <h4>Where can I learn more about TLS performance?</h4>
       <p><i>High Performance Browser Networking</i> contains a <a href="http://hpbn.co/tls">full chapter on TLS performance</a>.</p>
