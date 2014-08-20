@@ -383,6 +383,9 @@ $> openssl speed ecdh</pre>
       <h4>What about Elliptic Curve Cryptography (ECC) certificates?</h4>
       <p>ECC certificates offer <a href="https://casecurity.org/2014/06/10/benefits-of-elliptic-curve-cryptography/">stronger security and smaller certificates</a> - e.g. a 256-bit ECC key is equivalent to a 3072-bit RSA key. However, many clients do not support <a href="https://en.wikipedia.org/wiki/Elliptic_Curve_DSA">ECDSA</a>, which means that the server should support both RSA and ECDSA, and some popular servers do not support dual certificate deployments. Consult the documentation of your server to see if RSA+ECDSA is a supported option.</p>
 
+      <h4>What about CRIME and BREACH attacks?</h4>
+      <p><a href="https://en.wikipedia.org/wiki/CRIME">CRIME</a> is an attack against compression at the TLS layer. All modern user agents disable TLS compression, but it is still recommended that you disable TLS compression on your server. <a href="https://en.wikipedia.org/wiki/BREACH_(security_exploit)">BREACH</a>, on the other hand, is an attack against compression on top of TLS (e.g. HTTP compression) and must be mitigated both at the server and application levels - <a href="https://community.qualys.com/blogs/securitylabs/2013/08/07/defending-against-the-breach-attack">read more</a>.</p>
+
       <h4>How do I migrate my existing site to HTTPS?</h4>
       <p>Checkout the <a href="https://www.youtube.com/watch?v=cBhZ6S0PFCY">HTTPS Everywhere presentation</a> (<a href="https://docs.google.com/presentation/d/15H8Sj-Zol1tcum0CSylhmXns5r7cvNFtzYrcwAzkTjM/present">slides</a>) from Google I/O to learn the best practices and the steps to safely migrate your existing content to HTTPS.</p>
 
