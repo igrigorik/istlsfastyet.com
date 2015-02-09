@@ -50,9 +50,15 @@ module.exports = function(grunt) {
       }
     },
 
+    'gh-pages': {
+      options: {
+        base: 'release'
+      },
+      src: '**/*'
+    },
+
     exec: {
-      copy: 'cp -r *.{html,txt,ico} css images js release',
-      push: 'rsync -rtzh --progress --delete release/ --rsh="ssh -p22" istlsfastyet:public'
+      copy: 'cp -r *.{html,txt,ico} CNAME css images js release'
     }
   });
 
@@ -60,8 +66,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('deploy', ['build', 'exec:copy', 'exec:push'])
+  grunt.registerTask('deploy', ['build', 'exec:copy', 'gh-pages'])
   grunt.registerTask('default', ['build','connect:server','watch']);
 }
