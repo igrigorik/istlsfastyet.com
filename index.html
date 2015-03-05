@@ -390,7 +390,7 @@ $> openssl speed ecdh</pre>
       <h3 id="faq"><a href="#faq">FAQ</a></h3>
 
       <h4 id="benchmarks">What about benchmarks?</h4>
-      <p>Quality of implementation matters &mdash; no argument there &mdash; and you should do your due dilligence. That said, you need to <i>test on your own hardware and with realistic traffic patterns</i> to get an accurate picture of what works best for your specific workload. Don't trust outdated benchmarks, update your OpenSSL libraries, update your server, and run the tests.</p>
+      <p>Quality of implementation matters &mdash; no argument there &mdash; and you should do your due diligence. That said, you need to <i>test on your own hardware and with realistic traffic patterns</i> to get an accurate picture of what works best for your specific workload. Don't trust outdated benchmarks, update your OpenSSL libraries, update your server, and run the tests.</p>
 
       <h4 id="ops-cost">TLS operational costs are still higher, right?</h4>
       <p>Not necessarily. Once you enable and optimize your TLS stack you're also well on your way to deploying SPDY and HTTP/2. Unlike HTTP/1.1, both of these protocols require only a single connection to the server, which means fewer sockets, memory buffers, TLS handshakes, and so on. As a result, it may well be the case that you will be able to <a href="https://www.neotys.com/blog/performance-of-spdy-enabled-web-servers/">handle more users with fewer resources</a>.</p>
