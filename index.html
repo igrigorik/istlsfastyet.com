@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Is TLS Fast Yet?</title>
 
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -52,7 +52,7 @@
     <div class="small-12 medium-4 large-4 columns  panel">
 <pre><b># upgrade to latest</b>
 $> openssl version
-OpenSSL 1.0.1i 6 Aug 2014
+OpenSSL 1.0.2a 19 Mar 2015
 
 <b># run benchmarks</b>
 $> openssl speed sha
@@ -229,7 +229,7 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_spdy_module.html">spdy/3.1</a></td>
           </tr>
           <tr>
-            <td><a href="http://nodejs.org/api/https.html">node.js</a></td>
+            <td><a href="http://nodejs.org/api/https.html">Node.js</a></td>
             <td class="ok">yes</td>
             <td class="alert">no</td>
             <td class="alert">no</td>
@@ -390,7 +390,7 @@ $> openssl speed ecdh</pre>
       <h3 id="faq"><a href="#faq">FAQ</a></h3>
 
       <h4 id="benchmarks">What about benchmarks?</h4>
-      <p>Quality of implementation matters &mdash; no argument there &mdash; and you should do your due dilligence. That said, you need to <i>test on your own hardware and with realistic traffic patterns</i> to get an accurate picture of what works best for your specific workload. Don't trust outdated benchmarks, update your OpenSSL libraries, update your server, and run the tests.</p>
+      <p>Quality of implementation matters &mdash; no argument there &mdash; and you should do your due diligence. That said, you need to <i>test on your own hardware and with realistic traffic patterns</i> to get an accurate picture of what works best for your specific workload. Don't trust outdated benchmarks, update your OpenSSL libraries, update your server, and run the tests.</p>
 
       <h4 id="ops-cost">TLS operational costs are still higher, right?</h4>
       <p>Not necessarily. Once you enable and optimize your TLS stack you're also well on your way to deploying SPDY and HTTP/2. Unlike HTTP/1.1, both of these protocols require only a single connection to the server, which means fewer sockets, memory buffers, TLS handshakes, and so on. As a result, it may well be the case that you will be able to <a href="https://www.neotys.com/blog/performance-of-spdy-enabled-web-servers/">handle more users with fewer resources</a>.</p>
@@ -408,7 +408,7 @@ $> openssl speed ecdh</pre>
       <p>Ensure you have a shared session cache to get a good cache hit rate on resumed sessions across different servers. Also, ensure you expire and rotate your sessions and session ticket keys in a secure manner, <a href="https://www.imperialviolet.org/2013/06/27/botchingpfs.html">especially when forward secrecy is enabled</a>.</p>
 
       <h4 id="cert-cost">What about certificate costs?</h4>
-      <p>You can get a free certificate for non-commercial use from multiple certificate providers. For commercial use, you can get a single domain certificate for ~$10, a multi-domain certificate for ~$30, and a wildcard for ~$100. If you need EV verification, then you will have to pay a bit extra. Use your favorite search engine to look for and evaluate the available options. The security and integrity of your visitors' data is worth every penny!</p>
+      <p>You can get a free certificate for non-commercial use from multiple certificate providers. For commercial use, you can get a single domain certificate for ~$10 per year, a multi-domain certificate for ~$30, and a wildcard for ~$100. If you need EV verification, then you will have to pay a bit extra. Use your favorite search engine to look for and evaluate the available options. The security and integrity of your visitors' data is worth every penny!</p>
 
       <h4 id="ecc">What about Elliptic Curve Cryptography (ECC) certificates?</h4>
       <p>ECC certificates offer <a href="https://casecurity.org/2014/06/10/benefits-of-elliptic-curve-cryptography/">stronger security and smaller certificates</a> - e.g. a 256-bit ECC key is equivalent to a 3072-bit RSA key. However, many clients do not support <a href="https://en.wikipedia.org/wiki/Elliptic_Curve_DSA">ECDSA</a>, which means that the server should support both RSA and ECDSA, and some popular servers do not support dual certificate deployments. Consult the documentation of your server to see if RSA+ECDSA is a supported option.</p>
@@ -447,12 +447,19 @@ $> openssl speed ecdh</pre>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-71196-12', 'istlsfastyet.com');
+
+    // anonymize user IPs (chops off the last IP triplet)
+    ga('set', 'anonymizeIp', true);
+
+    // forces SSL for collection even if the page were somehow loaded over http://
+    ga('set', 'forceSSL', true);
+
     ga('send', 'pageview');
   </script>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
   </body>
 </html>
