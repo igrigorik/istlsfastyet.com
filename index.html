@@ -166,7 +166,7 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://issues.apache.org/jira/browse/TS-2503">dynamic</a></td>
             <td class="ok"><a href="http://mail-archives.us.apache.org/mod_mbox/www-announce/201206.mbox/%3C4FE245C6.6060900@apache.org%3E">yes</a></td>
             <td class="ok"><a href="https://issues.apache.org/jira/browse/TS-2372">yes</a></td>
-            <td class="ok"><a href="https://issues.apache.org/jira/browse/TS-2431">spdy/3.1</a></td>
+            <td class="ok"><a href="https://issues.apache.org/jira/browse/TS-2431">spdy/3.1</a>, <a href="https://docs.trafficserver.apache.org/en/latest/reference/configuration/records.config.en.html#http-2-configuration">http/2</a></td>
           </tr>
          <tr>
             <td><a href="https://github.com/indutny/bud">bud</a></td>
@@ -186,7 +186,7 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="ok"><a href="https://support.f5.com/kb/en-us/products/big-ip-aam/manuals/product/aam-concepts-11-6-0/15.html">yes</a></td>
             <td class="ok"><a href="https://support.f5.com/kb/en-us/solutions/public/13000/100/sol13163.html">yes</a></td>
-            <td class="ok"><a href="https://support.f5.com/kb/en-us/products/big-ip-aam/manuals/product/aam-concepts-11-6-0/15.html">spdy/3.1, http/2.0</a></td>
+            <td class="ok"><a href="https://support.f5.com/kb/en-us/products/big-ip-aam/manuals/product/aam-concepts-11-6-0/15.html">spdy/3.1, http/2</a></td>
           </tr>
           <tr>
             <td><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html">HAProxy</a></td>
@@ -199,6 +199,16 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
           </tr>
           <tr>
+            <td><a href="https://github.com/varnish/hitch">Hitch</a></td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert"><a href="https://github.com/varnish/hitch/issues/19">no</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+          </tr>
+          <tr>
             <td><a href="http://www.iis.net/configreference">IIS</a></td>
             <td class="ok">yes</td>
             <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
@@ -207,6 +217,16 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
             <td class="ok"><a href="http://blogs.technet.com/b/erezs_iis_blog/archive/2013/08/22/perfect-secrecy-in-an-imperfect-world.aspx">yes</a></td>
             <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td><a href="https://iojs.org/api/https.html">io.js</a></td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener">yes</a></td>
+            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_event_ocsprequest">yes</a></td>
+            <td class="warn"><a href="https://iojs.org/api/tls.html#tls_tlssocket_setmaxsendfragment_size">optional</a></td>
+            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener">yes</a></td>
+            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_perfect_forward_secrecy">yes</a></td>
+            <td class="ok"><a href="https://github.com/indutny/node-spdy">spdy/3.1</a>, <a href="https://github.com/molnarg/node-http2">http/2</a></td>
           </tr>
           <tr>
             <td><a href="https://www.citrix.com/products/netscaler-application-delivery-controller/overview.html?posit=glnav">NetScaler</a></td>
@@ -236,7 +256,7 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="ok">yes</td>
             <td class="alert">no</td>
-            <td class="ok"><a href="https://github.com/indutny/node-spdy">spdy/3.1</a></td>
+            <td class="ok"><a href="https://github.com/indutny/node-spdy">spdy/3.1</a>, <a href="https://github.com/molnarg/node-http2">http/2</a></td>
           </tr>
         </tbody>
       </table>
