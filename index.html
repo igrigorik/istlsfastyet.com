@@ -439,8 +439,8 @@ $> openssl speed ecdh</pre>
       <h4 id="migrate">How do I migrate my existing site to HTTPS?</h4>
       <p>Checkout the <a href="https://www.youtube.com/watch?v=cBhZ6S0PFCY">HTTPS Everywhere presentation</a> (<a href="https://docs.google.com/presentation/d/15H8Sj-Zol1tcum0CSylhmXns5r7cvNFtzYrcwAzkTjM/present">slides</a>) from Google I/O to learn the best practices and the steps to safely migrate your existing content to HTTPS.</p>
 
-      <h4>How does this site measure up?</h4>
-      <p>It's running on nginx with resumption, OCSP stapling, 1400 byte TLS records, forward secrecy, NPN, and SPDY/3.1. <a href="https://github.com/igrigorik/istlsfastyet.com/blob/master/nginx/">See config files</a>.</p>
+      <h4>Why do we need HTTPS everywhere?</h4>
+      <p>Every unencrypted HTTP request reveals information about user’s behavior. Today, there is no such thing as insensitive web traffic - <a href="https://https.cio.gov/everything/">read more</a>.</p>
 
       <h4 id="more">Where can I learn more about TLS performance?</h4>
       <ul>
