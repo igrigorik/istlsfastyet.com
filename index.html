@@ -132,7 +132,7 @@ $> openssl speed ecdh</pre>
   <div class="row">
     <div class="large-12 columns">
       <h3 id="server-performance"><a href="#server-performance">Server performance</a></h3>
-      <p>TLS exposes many different knobs and new config flags on every server. Our goal here is not to provide an exhaustive list (consult server docs for that), but to highlight status of important performance-oriented features: resumption, stapling, false start (requires NPN and forward secrecy), and support for the HTTP/2 protocol.</p>
+      <p>TLS exposes many different knobs and new config flags on every server. Our goal here is not to provide an exhaustive list (consult server docs for that), but to highlight status of important performance-oriented features: resumption, stapling, false start (requires ALPN and forward secrecy), and support for the HTTP/2 protocol.</p>
 
       <table class="cf">
         <thead>
@@ -142,7 +142,7 @@ $> openssl speed ecdh</pre>
             <th>Session tickets</th>
             <th>OCSP stapling</th>
             <th>Dynamic record sizing</th>
-            <th>ALPN / NPN</th>
+            <th>ALPN</th>
             <th>Forward secrecy</th>
             <th>HTTP/2</th>
           </tr>
@@ -280,7 +280,7 @@ $> openssl speed ecdh</pre>
             <th>Session tickets</th>
             <th>OCSP stapling</th>
             <th>Dynamic record sizing</th>
-            <th>ALPN / NPN</th>
+            <th>ALPN</th>
             <th>Forward secrecy</th>
             <th>HTTP/2</th>
           </tr>
