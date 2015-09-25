@@ -219,16 +219,6 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://blogs.iis.net/nazim/http-2-for-iis-in-windows-10-technical-preview">yes</a></td>
           </tr>
           <tr>
-            <td><a href="https://iojs.org/api/https.html">io.js</a></td>
-            <td class="ok">yes</td>
-            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener">yes</a></td>
-            <td class="warn"><a href="https://iojs.org/api/tls.html#tls_event_ocsprequest">optional</a></td>
-            <td class="warn"><a href="https://iojs.org/api/tls.html#tls_tlssocket_setmaxsendfragment_size">optional</a></td>
-            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener">yes</a></td>
-            <td class="ok"><a href="https://iojs.org/api/tls.html#tls_perfect_forward_secrecy">yes</a></td>
-            <td class="ok"><a href="https://github.com/molnarg/node-http2">yes</a></td>
-          </tr>
-          <tr>
             <td><a href="https://www.citrix.com/products/netscaler-application-delivery-controller/overview.html?posit=glnav">NetScaler</a></td>
             <td class="ok"><a href="http://support.citrix.com/article/CTX121925">yes</a></td>
             <td class="alert">no</td>
@@ -249,13 +239,13 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://www.nginx.com/blog/early-alpha-patch-http2/">yes</a></td>
           </tr>
           <tr>
-            <td><a href="http://nodejs.org/api/https.html">Node.js</a></td>
+            <td><a href="https://nodejs.org/api/https.html">node.js</a></td>
             <td class="ok">yes</td>
-            <td class="alert">no</td>
-            <td class="alert">no</td>
-            <td class="alert">no</td>
-            <td class="ok">yes</td>
-            <td class="alert">no</td>
+            <td class="ok"><a href="https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener">yes</a></td>
+            <td class="warn"><a href="https://nodejs.org/api/tls.html#tls_event_ocsprequest">optional</a></td>
+            <td class="warn"><a href="https://nodejs.org/api/tls.html#tls_tlssocket_setmaxsendfragment_size">optional</a></td>
+            <td class="ok"><a href="https://nodejs.org/api/tls.html#tls_npn_and_sni">yes</a></td>
+            <td class="ok"><a href="https://nodejs.org/api/tls.html#tls_perfect_forward_secrecy">yes</a></td>
             <td class="ok"><a href="https://github.com/molnarg/node-http2">yes</a></td>
           </tr>
         </tbody>
@@ -305,6 +295,16 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok">spdy/3.1</td>
+          </tr>
+          <tr>
+            <td>Incapsula</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>AWS ELB</td>
