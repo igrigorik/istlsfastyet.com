@@ -226,7 +226,7 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://support.citrix.com/proddocs/topic/netscaler-traffic-management-10-5-map/ns-ssl-config-ecdhe-ciphers-tsk.html">yes</a></td>
-            <td class="warn">spdy/3.0</td>
+            <td class="ok"><a href="http://docs.citrix.com/en-us/netscaler/11/system/http-configurations/configuring-http2.html">http/2</a></td>
           </tr>
           <tr>
             <td><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html">NGINX</a></td>
@@ -294,7 +294,7 @@ $> openssl speed ecdh</pre>
             <td class="warn">4KB (static)</td>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
-            <td class="ok">spdy/3.1</td>
+            <td class="ok"><a href="https://blog.cloudflare.com/introducing-http2/">http/2</a></td>
           </tr>
           <tr>
             <td>Incapsula</td>
@@ -302,9 +302,9 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="alert">no</td>
             <td class="alert">no</td>
-            <td class="alert">no</td>
             <td class="ok">yes</td>
-            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://www.incapsula.com/blog/http2-is-here-what-you-need-to-know.html">yes</a></td>
           </tr>
           <tr>
             <td>AWS ELB</td>
@@ -395,6 +395,16 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="alert">no</td>
             <td class="ok">spdy/3.1</td>
+          </tr>
+          <tr>
+            <td>KeyCDN</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://www.keycdn.com/support/ocsp-stapling/">yes</a></td>
+            <td class="warn">configurable (static)</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://www.keycdn.com/blog/keycdn-http2-support/">http/2</a></td>
           </tr>
         </tbody>
       </table>
