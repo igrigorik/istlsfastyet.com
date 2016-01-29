@@ -248,6 +248,16 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://nodejs.org/api/tls.html#tls_perfect_forward_secrecy">yes</a></td>
             <td class="ok"><a href="https://github.com/molnarg/node-http2">yes</a></td>
           </tr>
+          <tr>
+            <td><a href="https://golang.org/pkg/crypto/tls/">Go</a></td>
+            <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#ClientSessionState">yes</a></td>
+            <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config.SetSessionTicketKeys">yes</a></td>
+            <td class="warn"><a href="https://golang.org/pkg/crypto/tls/#Certificate">optional</a></td>
+            <td class="alert">no</td>
+            <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
+            <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
+            <td class="ok"><a href="https://godoc.org/golang.org/x/net/http2">yes</a></td>
+          </tr>
         </tbody>
       </table>
 
