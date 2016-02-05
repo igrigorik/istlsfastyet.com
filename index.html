@@ -189,6 +189,16 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://support.f5.com/kb/en-us/products/big-ip-aam/manuals/product/aam-concepts-11-6-0/15.html">yes</a></td>
           </tr>
           <tr>
+            <td><a href="https://h2o.examp1e.net/">H2O</a></td>
+            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption">yes</a></td>
+            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption">yes</a></td>
+            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ocsp-update-interval">yes</a></td>
+            <td class="warn"><a href="https://github.com/h2o/h2o/blob/v1.7.0/lib/common/socket.c#L375-L377">static</a> (1.4k)</td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption-ticket-based">yes</a></td>
+            <td class="ok"><a href="https://h2o.examp1e.net/configure/http2_directives.html">yes</a></td>
+          </tr>
+          <tr>
             <td><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html">HAProxy</a></td>
             <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-no-tls-tickets">yes</a></td>
             <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-no-tls-tickets">yes</a></td>
@@ -233,7 +243,7 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache">yes</a></td>
             <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_tickets">yes</a></td>
             <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling">yes</a></td>
-            <td class="warn"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_buffer_size">static</a></td>
+            <td class="warn"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_buffer_size">static</a> (16k)</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Nginx">yes</a></td>
             <td class="ok"><a href="https://www.nginx.com/blog/early-alpha-patch-http2/">yes</a></td>
@@ -258,17 +268,7 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
             <td class="ok"><a href="https://godoc.org/golang.org/x/net/http2">yes</a></td>
           </tr>
-          <tr>
-            <td><a href="https://h2o.examp1e.net/">H2O</a></td>
-            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption">yes</a></td>
-            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption">yes</a></td>
-            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ocsp-update-interval">yes</a></td>
-            <td class="warn">static</td>
-            <td class="ok">yes</td>
-            <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption-ticket-based">yes</a></td>
-            <td class="ok"><a href="https://h2o.examp1e.net/configure/http2_directives.html">yes</a></td>
-          </tr>
-        </tbody>
+       </tbody>
       </table>
 
       <p>Your favorite server missing, or found an error? Open a <a href="https://github.com/igrigorik/istlsfastyet.com/issues">pull request!</a></p>
