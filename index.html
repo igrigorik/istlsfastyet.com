@@ -107,23 +107,22 @@ $> openssl speed ecdh</pre>
       <p>A well tuned TLS deployment can make an enormous positive difference in the user experience, as well as in your operational costs. Some of the most critical features and concepts:</p>
 
       <ul>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_HANDSHAKE">TLS handshake</a></li>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_RESUME">TLS session resumption</a></li>
-         <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_FALSE_START">TLS False Start</a></li>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_RECORD_SIZE">TLS record size optimization</a></li>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_EARLY_TERMINATION">Early termination</a></li>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#_ocsp_stapling">OCSP stapling</a></li>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#_http_strict_transport_security_hsts">HTTP Strict Transport Security (HSTS)</a></li>
+        <li><a href="https://hpbn.co/transport-layer-security-tls/#tls-handshake">TLS handshake</a></li>
+        <li><a href="https://hpbn.co/transport-layer-security-tls/#tls-session-resumption">TLS session resumption</a></li>
+        <li><a href="https://hpbn.co/transport-layer-security-tls/#enable-tls-false-start">TLS False Start</a></li>
+        <li><a href="https://hpbn.co/transport-layer-security-tls/#optimize-tls-record-size">TLS record size optimization</a></li>
+        <li><a href="https://hpbn.co/transport-layer-security-tls/#leverage-early-termination">Early termination</a></li>
+        <li><a href="https://hpbn.co/transport-layer-security-tls/#enable-http-strict-transport-security-hsts">HTTP Strict Transport Security (HSTS)</a></li>
       </ul>
 
-      <p>To deliver the best performance, run down the <a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#_performance_checklist_2">TLS performance checklist</a> and use a tool like <a href="https://www.ssllabs.com/ssltest/">Qualys SSL Server Test</a> to scan your server for common configuration and security flaws.</p>
+      <p>To deliver the best performance, run down the <a href="https://hpbn.co/transport-layer-security-tls/#optimizing-for-tls">TLS performance checklist</a> and use a tool like <a href="https://www.ssllabs.com/ssltest/">Qualys SSL Server Test</a> to scan your server for common configuration and security flaws.</p>
     </div>
 
     <div class="small-12 medium-4 large-4 columns panel">
       <h5>High Performance Browser Networking</h5>
       <img src="images/hpbn.png" alt=""/>
       <p><i>What every developer should know about networking and web performance.</i></p>
-      <a href="http://chimera.labs.oreilly.com/books/1230000000545?utm_source=istlsfastyet&amp;utm_medium=referral&amp;utm_campaign=tls" class="success button expand">Read HPBN online</a>
+      <a href="https://hpbn.co/?utm_source=istlsfastyet&amp;utm_medium=referral&amp;utm_campaign=tls" class="success button expand">Read HPBN online</a>
     </div>
 
     <hr />
@@ -300,7 +299,7 @@ $> openssl speed ecdh</pre>
   <div class="row">
     <div class="large-12 columns">
       <h3 id="cdn-paas"><a href="#cdn-paas">CDN &amp; PaaS performance</a></h3>
-      <p>Using a CDN allows us to terminate the connection close to the user, which can significantly reduce the cost of TCP and TLS handshake - see <a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html#TLS_EARLY_TERMINATION">early termination</a>. For best results you should be using a CDN to serve both static and dynamic content.</p>
+      <p>Using a CDN allows us to terminate the connection close to the user, which can significantly reduce the cost of TCP and TLS handshake - see <a href="https://hpbn.co/transport-layer-security-tls/#leverage-early-termination">early termination</a>. For best results you should be using a CDN to serve both static and dynamic content.</p>
 
       <table class="cf">
         <thead>
