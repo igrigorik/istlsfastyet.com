@@ -223,9 +223,9 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://github.com/varnish/hitch/blob/master/docs/configuration.md#ocsp-stapling">yes</a></td>
             <td class="alert">no</td>
-            <td class="alert">no</td>
+            <td class="ok"><a href="https://github.com/varnish/hitch/blob/master/docs/configuration.md#alpnnpn-support">yes</a></td>
             <td class="ok">yes</td>
-            <td class="alert">no</td>
+            <td class=warn><a href="https://github.com/varnish/hitch/blob/master/CHANGES.rst#hitch-140-beta1-2016-08-26">yes</a></td>
           </tr>
           <tr>
             <td><a href="http://www.iis.net/configreference">IIS</a></td>
@@ -272,10 +272,10 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#ClientSessionState">yes</a></td>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config.SetSessionTicketKeys">yes</a></td>
             <td class="warn"><a href="https://golang.org/pkg/crypto/tls/#Certificate">optional</a></td>
-            <td class="alert">no</td>
+            <td class="ok"><a href="https://golang.org/doc/go1.7#crypto/tls">yes</a></td>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
-            <td class="ok"><a href="https://godoc.org/golang.org/x/net/http2">yes</a></td>
+            <td class="ok"><a href="https://golang.org/doc/go1.6#http2">yes</a></td>
           </tr>
           <tr>
             <td><a href="https://nghttp2.org/documentation/nghttpx.1.html">nghttpx</a></td>
@@ -336,7 +336,7 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://http2.akamai.com/">yes</a></td>
           </tr>
           <tr>
-            <td>AWS ELB</td>
+            <td>AWS ELB (Classic)</td>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="alert">no</td>
@@ -344,6 +344,16 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="ok"><a href="https://aws.amazon.com/about-aws/whats-new/2014/02/19/elastic-load-balancing-perfect-forward-secrecy-and-more-new-security-features/">yes</a></td>
             <td class="alert">no</td>
+          </tr>
+          <tr>
+            <td>AWS ELB (Application)</td>
+            <td class="ok">yes</td>
+            <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="ok">yes</td>
+            <td class="ok"><a href="https://aws.amazon.com/about-aws/whats-new/2014/02/19/elastic-load-balancing-perfect-forward-secrecy-and-more-new-security-features/">yes</a></td>
+            <td class="ok"><a href="https://aws.amazon.com/blogs/aws/new-aws-application-load-balancer/">yes</a></td>
           </tr>
           <tr>
             <td>AWS CloudFront</td>
