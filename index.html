@@ -144,6 +144,8 @@ $> openssl speed ecdh</pre>
             <th>ALPN</th>
             <th>Forward secrecy</th>
             <th>HTTP/2</th>
+            <th>TLS 1.3</th>
+            <th>TLS 1.3 0-RTT</th>
           </tr>
         </thead>
         <tbody>
@@ -156,6 +158,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslalpnpreference">yes</a></td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Apache">yes</a></td>
             <td class="ok"><a href="https://httpd.apache.org/docs/trunk/mod/mod_http2.html">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://docs.trafficserver.apache.org/en/latest/index.html">ATS</a></td>
@@ -166,6 +170,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://mail-archives.us.apache.org/mod_mbox/www-announce/201206.mbox/%3C4FE245C6.6060900@apache.org%3E">yes</a></td>
             <td class="ok"><a href="https://issues.apache.org/jira/browse/TS-2372">yes</a></td>
             <td class="ok"><a href="https://docs.trafficserver.apache.org/en/latest/admin-guide/files/records.config.en.html#http-2-configuration">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
          <tr>
             <td><a href="https://github.com/indutny/bud">bud</a></td>
@@ -175,6 +181,8 @@ $> openssl speed ecdh</pre>
             <td class="warn">static</td>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
@@ -186,6 +194,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://www.brocade.com/content/dam/common/documents/content-types/user-guide/brocade-vtm-10.3-userguide.pdf#page=180">yes</a></td>
             <td class="ok"><a href="https://www.brocade.com/content/dam/common/documents/content-types/user-guide/brocade-vtm-10.3-userguide.pdf#page=224">yes</a></td>
             <td class="ok"><a href="https://www.brocade.com/content/dam/common/documents/content-types/user-guide/brocade-vtm-10.3-userguide.pdf#page=180">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://support.f5.com/kb/en-us/solutions/public/14000/700/sol14783.html">F5 BIG-IP</a></td>
@@ -196,6 +206,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://support.f5.com/kb/en-us/products/big-ip-aam/manuals/product/aam-concepts-11-6-0/15.html">yes</a></td>
             <td class="ok"><a href="https://support.f5.com/kb/en-us/solutions/public/13000/100/sol13163.html">yes</a></td>
             <td class="ok"><a href="https://support.f5.com/kb/en-us/products/big-ip-aam/manuals/product/aam-concepts-11-6-0/15.html">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://h2o.examp1e.net/">H2O</a></td>
@@ -206,6 +218,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://h2o.examp1e.net/configure/base_directives.html#ssl-session-resumption-ticket-based">yes</a></td>
             <td class="ok"><a href="https://h2o.examp1e.net/configure/http2_directives.html">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html">HAProxy</a></td>
@@ -215,6 +229,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://gist.github.com/igrigorik/8960971">dynamic</a></td>
             <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-alpn">yes</a></td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Haproxy">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
@@ -226,6 +242,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://github.com/varnish/hitch/blob/master/docs/configuration.md#alpnnpn-support">yes</a></td>
             <td class="ok">yes</td>
             <td class=warn><a href="https://github.com/varnish/hitch/blob/master/CHANGES.rst#hitch-140-beta1-2016-08-26">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="http://www.iis.net/configreference">IIS</a></td>
@@ -236,6 +254,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
             <td class="ok"><a href="http://blogs.technet.com/b/erezs_iis_blog/archive/2013/08/22/perfect-secrecy-in-an-imperfect-world.aspx">yes</a></td>
             <td class="ok"><a href="http://blogs.iis.net/nazim/http-2-for-iis-in-windows-10-technical-preview">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://www.citrix.com/products/netscaler-application-delivery-controller/overview.html?posit=glnav">NetScaler</a></td>
@@ -246,6 +266,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://support.citrix.com/proddocs/topic/netscaler-traffic-management-10-5-map/ns-ssl-config-ecdhe-ciphers-tsk.html">yes</a></td>
             <td class="ok"><a href="http://docs.citrix.com/en-us/netscaler/11/system/http-configurations/configuring-http2.html">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html">NGINX</a></td>
@@ -256,6 +278,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Nginx">yes</a></td>
             <td class="ok"><a href="https://www.nginx.com/blog/early-alpha-patch-http2/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://nodejs.org/api/https.html">node.js</a></td>
@@ -266,6 +290,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://nodejs.org/api/tls.html#tls_npn_and_sni">yes</a></td>
             <td class="ok"><a href="https://nodejs.org/api/tls.html#tls_perfect_forward_secrecy">yes</a></td>
             <td class="ok"><a href="https://github.com/molnarg/node-http2">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://golang.org/pkg/crypto/tls/">Go</a></td>
@@ -276,6 +302,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
             <td class="ok"><a href="https://golang.org/pkg/crypto/tls/#Config">yes</a></td>
             <td class="ok"><a href="https://golang.org/doc/go1.6#http2">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://nghttp2.org/documentation/nghttpx.1.html">nghttpx</a></td>
@@ -286,6 +314,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://nghttp2.org/documentation/nghttpx.1.html#cmdoption-nghttpx--npn-list">yes</a></td>
             <td class="ok"><a href="https://nghttp2.org/documentation/nghttpx.1.html#cmdoption-nghttpx--ciphers">yes</a></td>
             <td class="ok"><a href="https://nghttp2.org/documentation/nghttpx.1.html#http-2-and-spdy">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://www.shimmercat.com/">ShimmerCat</a></td>
@@ -296,6 +326,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://www.shimmercat.com/en/docs/1.5/featureset/#misc-tls-features">yes</a></td>
             <td class="ok"><a href="https://www.shimmercat.com/en/docs/1.5/featureset/#misc-tls-features">yes</a></td>
             <td class="ok"><a href="https://www.shimmercat.com/en/docs/1.5/featureset/#protocol-support">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
        </tbody>
       </table>
@@ -322,6 +354,8 @@ $> openssl speed ecdh</pre>
             <th>ALPN</th>
             <th>Forward secrecy</th>
             <th>HTTP/2</th>
+            <th>TLS 1.3</th>
+            <th>TLS 1.3 0-RTT</th>
           </tr>
         </thead>
         <tbody>
@@ -334,6 +368,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://http2.akamai.com/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>AWS ELB (Classic)</td>
@@ -343,6 +379,8 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="alert">no</td>
             <td class="ok"><a href="https://aws.amazon.com/about-aws/whats-new/2014/02/19/elastic-load-balancing-perfect-forward-secrecy-and-more-new-security-features/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
@@ -354,6 +392,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://aws.amazon.com/about-aws/whats-new/2014/02/19/elastic-load-balancing-perfect-forward-secrecy-and-more-new-security-features/">yes</a></td>
             <td class="ok"><a href="https://aws.amazon.com/blogs/aws/new-aws-application-load-balancer/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>AWS CloudFront</td>
@@ -364,6 +404,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://aws.amazon.com/about-aws/whats-new/2016/09/amazon-cloudfront-now-supports-http2/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>BelugaCDN</td>
@@ -374,6 +416,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://docs.belugacdn.com/docs/ssl-certificates">yes</a></td>
             <td class="ok"><a href="https://docs.belugacdn.com/docs/ssl-certificates">yes</a></td>
             <td class="ok"><a href="https://docs.belugacdn.com/docs/ssl-certificates">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>CDN77</td>
@@ -384,9 +428,11 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://client.cdn77.com/support/knowledgebase/general-faq/ssl-tech-specs">yes</a></td>
             <td class="ok"><a href="https://client.cdn77.com/support/knowledgebase/general-faq/ssl-tech-specs">yes</a></td>
             <td class="ok"><a href="https://www.cdn77.com/http2">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
-            <td>CloudFlare</td>
+            <td>Cloudflare</td>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
@@ -394,6 +440,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://blog.cloudflare.com/introducing-http2/">yes</a></td>
+            <td class="ok"><a href="https://blog.cloudflare.com/introducing-tls-1-3">yes</a></td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>ChinaNetCenter</td>
@@ -403,6 +451,8 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="alert">no</td>
             <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
@@ -414,6 +464,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="alert">no</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>Fastly</td>
@@ -424,6 +476,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://www.fastly.com/blog/http2-now-general-availability">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>Google App Engine</td>
@@ -434,6 +488,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>Heroku</td>
@@ -443,6 +499,8 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="alert">no</td>
             <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
@@ -454,6 +512,8 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://incapsula.zendesk.com/hc/en-us/articles/235148027-Incapsula-TLS-SSL-Tech-Specs">yes</a></td>
             <td class="ok"><a href="https://incapsula.zendesk.com/hc/en-us/articles/235148027-Incapsula-TLS-SSL-Tech-Specs">yes</a></td>
             <td class="ok"><a href="https://www.incapsula.com/blog/http2-is-here-what-you-need-to-know.html">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>Instart Logic</td>
@@ -464,6 +524,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://www.instartlogic.com/blog/upgrading-http2">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>KeyCDN</td>
@@ -474,6 +536,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://www.keycdn.com/blog/keycdn-http2-support/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>Limelight</td>
@@ -483,6 +547,8 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="alert">no</td>
             <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
@@ -494,6 +560,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://www.maxcdn.com/blog/http2-support/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>Netlify</td>
@@ -504,6 +572,8 @@ $> openssl speed ecdh</pre>
             <td class="ok">yes</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://www.netlify.com/blog/2015/10/20/netlify-news-no.-6/">yes</a></td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
           </tr>
           <tr>
             <td>QUANTIL</td>
@@ -513,6 +583,8 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
             <td class="alert">no</td>
             <td class="ok">yes</td>
+            <td class="alert">no</td>
+            <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
         </tbody>
