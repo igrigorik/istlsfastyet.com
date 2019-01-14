@@ -14,4 +14,4 @@ Open an issue or a pull request!
 
 #### License
 
-[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/deed.en_US)
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/deed.en_US)

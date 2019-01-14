@@ -77,7 +77,7 @@ $> openssl speed ecdh</pre>
     <div class="small-12 medium-6 large-6 columns">
       <p>
       <q>We have deployed TLS at a large scale using both hardware and software load balancers. We have found that modern software-based TLS implementations running on commodity CPUs are fast enough to handle heavy HTTPS traffic load without needing to resort to dedicated cryptographic hardware.</q><br/>
-      <cite class="right"> - Doug Beaver, Facebook <a href="http://lists.w3.org/Archives/Public/ietf-http-wg/2012JulSep/0251.html">"HTTP2 Expression of Interest"</a></cite>
+      <cite class="right"> - Doug Beaver, Facebook <a href="https://lists.w3.org/Archives/Public/ietf-http-wg/2012JulSep/0251.html">"HTTP2 Expression of Interest"</a></cite>
     </p>
     </div>
 
@@ -155,7 +155,7 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslsessionticketkeyfile">yes</a></td>
             <td class="ok"><a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslusestapling">yes</a></td>
             <td class="ok"><a href="https://httpd.apache.org/docs/2.4/mod/mod_http2.html#h2tlscooldownsecs">yes</a></td>
-            <td class="ok"><a href="http://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslalpnpreference">yes</a></td>
+            <td class="ok"><a href="https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslalpnpreference">yes</a></td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Apache">yes</a></td>
             <td class="ok"><a href="https://httpd.apache.org/docs/trunk/mod/mod_http2.html">yes</a></td>
             <td class="ok"><a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslciphersuite">yes</a></td>
@@ -222,16 +222,16 @@ $> openssl speed ecdh</pre>
             <td class="ok"><a href="https://github.com/h2o/h2o/releases/tag/v2.2.0">yes</td>
           </tr>
           <tr>
-            <td><a href="http://cbonte.github.io/haproxy-dconv/1.8/configuration.html">HAProxy</a></td>
+            <td><a href="https://cbonte.github.io/haproxy-dconv/1.8/configuration.html">HAProxy</a></td>
             <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-no-tls-tickets">yes</a></td>
             <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-no-tls-tickets">yes</a></td>
             <td class="ok"><a href="https://kura.io/2014/07/02/haproxy-ocsp-stapling/">yes</a></td>
             <td class="ok"><a href="https://gist.github.com/igrigorik/8960971">dynamic</a></td>
             <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/configuration-1.5.html#5.1-alpn">yes</a></td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Haproxy">yes</a></td>
-            <td class="ok"><a href="http://cbonte.github.io/haproxy-dconv/1.8/configuration.html#1.1">yes</a></td>
-            <td class="ok"><a href="http://cbonte.github.io/haproxy-dconv/1.8/configuration.html#5.1-ssl-max-ver">yes</a></td>
-            <td class="ok"><a href="http://cbonte.github.io/haproxy-dconv/1.8/configuration.html#5.1-allow-0rtt">yes</a></td>
+            <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/1.8/configuration.html#1.1">yes</a></td>
+            <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/1.8/configuration.html#5.1-ssl-max-ver">yes</a></td>
+            <td class="ok"><a href="https://cbonte.github.io/haproxy-dconv/1.8/configuration.html#5.1-allow-0rtt">yes</a></td>
           </tr>
           <tr>
             <td><a href="https://github.com/varnish/hitch">Hitch</a></td>
@@ -246,40 +246,40 @@ $> openssl speed ecdh</pre>
             <td class="alert">no</td>
           </tr>
           <tr>
-            <td><a href="http://www.iis.net/configreference">IIS</a></td>
+            <td><a href="https://www.iis.net/configreference">IIS</a></td>
             <td class="ok">yes</td>
-            <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
-            <td class="ok"><a href="http://unmitigatedrisk.com/?p=368">yes</a></td>
+            <td class="ok"><a href="https://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
+            <td class="ok"><a href="https://unmitigatedrisk.com/?p=368">yes</a></td>
             <td class="alert">no</td>
-            <td class="ok"><a href="http://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
-            <td class="ok"><a href="http://blogs.technet.com/b/erezs_iis_blog/archive/2013/08/22/perfect-secrecy-in-an-imperfect-world.aspx">yes</a></td>
-            <td class="ok"><a href="http://blogs.iis.net/nazim/http-2-for-iis-in-windows-10-technical-preview">yes</a></td>
+            <td class="ok"><a href="https://technet.microsoft.com/en-us/library/hh831771.aspx">yes</a></td>
+            <td class="ok"><a href="https://blogs.technet.com/b/erezs_iis_blog/archive/2013/08/22/perfect-secrecy-in-an-imperfect-world.aspx">yes</a></td>
+            <td class="ok"><a href="https://blogs.iis.net/nazim/http-2-for-iis-in-windows-10-technical-preview">yes</a></td>
             <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
             <td><a href="https://www.citrix.com/products/netscaler-application-delivery-controller/overview.html?posit=glnav">NetScaler</a></td>
-            <td class="ok"><a href="http://support.citrix.com/article/CTX121925">yes</a></td>
-            <td class="ok"><a href="http://docs.citrix.com/en-us/netscaler/11-1/ssl/customize-ssl-config/support-for-tls-session-ticket-extension.html">yes</a></td>
-            <td class="ok"><a href="http://docs.citrix.com/en-us/netscaler/11-1/ssl/ssl-11-1-ocsp-stapling-solution.html">yes</a></td>
+            <td class="ok"><a href="https://support.citrix.com/article/CTX121925">yes</a></td>
+            <td class="ok"><a href="https://docs.citrix.com/en-us/netscaler/11-1/ssl/customize-ssl-config/support-for-tls-session-ticket-extension.html">yes</a></td>
+            <td class="ok"><a href="https://docs.citrix.com/en-us/netscaler/11-1/ssl/ssl-11-1-ocsp-stapling-solution.html">yes</a></td>
             <td class="alert">no</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://support.citrix.com/proddocs/topic/netscaler-traffic-management-10-5-map/ns-ssl-config-ecdhe-ciphers-tsk.html">yes</a></td>
-            <td class="ok"><a href="http://docs.citrix.com/en-us/netscaler/11/system/http-configurations/configuring-http2.html">yes</a></td>
+            <td class="ok"><a href="https://docs.citrix.com/en-us/netscaler/11/system/http-configurations/configuring-http2.html">yes</a></td>
             <td class="alert">no</td>
             <td class="alert">no</td>
           </tr>
           <tr>
-            <td><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html">NGINX</a></td>
-            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache">yes</a></td>
-            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_tickets">yes</a></td>
-            <td class="ok"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling">yes</a></td>
-            <td class="warn"><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_buffer_size">static</a> (16k)</td>
+            <td><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html">NGINX</a></td>
+            <td class="ok"><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache">yes</a></td>
+            <td class="ok"><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_tickets">yes</a></td>
+            <td class="ok"><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_stapling">yes</a></td>
+            <td class="warn"><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_buffer_size">static</a> (16k)</td>
             <td class="ok">yes</td>
             <td class="ok"><a href="https://wiki.mozilla.org/Security/Server_Side_TLS#Nginx">yes</a></td>
             <td class="ok"><a href="https://www.nginx.com/blog/early-alpha-patch-http2/">yes</a></td>
             <td class="ok"><a href="https://twitter.com/nginxorg/status/856896480497385473">yes</a></td>
-            <td class="alert">no</td>
+            <td class="ok"><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_early_data">yes</a></td>
           </tr>
           <tr>
             <td><a href="https://nodejs.org/api/https.html">node.js</a></td>
@@ -647,8 +647,8 @@ $> openssl speed ecdh</pre>
 
       <h4 id="more">Where can I learn more about TLS performance?</h4>
       <ul>
-        <li><a href="https://www.youtube.com/watch?v=0EB7zh_7UE4">Is TLS Fast Yet?</a> video from Velocity SC 2014 (<a href="http://bit.ly/fastTLS">slides</a>).
-        <li><a href="http://www.amazon.com/gp/product/B00FM0OC4S/ref=s9_simh_gw_p351_d2_i1">High Performance Browser Networking</a> contains a <a href="http://hpbn.co/tls">full chapter on TLS performance</a>.
+        <li><a href="https://www.youtube.com/watch?v=0EB7zh_7UE4">Is TLS Fast Yet?</a> video from Velocity SC 2014 (<a href="https://bit.ly/fastTLS">slides</a>).
+        <li><a href="https://www.amazon.com/gp/product/B00FM0OC4S/ref=s9_simh_gw_p351_d2_i1">High Performance Browser Networking</a> contains a <a href="https://hpbn.co/tls">full chapter on TLS performance</a>.
       </ul>
 
     </div>
